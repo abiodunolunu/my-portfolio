@@ -27,7 +27,6 @@ allElements.forEach(ele => {
     const offset = "aos-offset"
     ele.setAttribute("data-aos", aosTypes[Math.round(Math.random() * aosTypes.length - 1)])
     ele.setAttribute("data-aos-offset", 0)
-    console.log(Math.round(Math.random() * aosTypes.length))
 })
 
 AOS.init()
