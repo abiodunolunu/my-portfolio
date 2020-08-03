@@ -463,7 +463,6 @@ section.projects .project__item {
   border-radius: 5px;
   overflow: hidden;
   min-height: 520px;
-  min-width: 340px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
