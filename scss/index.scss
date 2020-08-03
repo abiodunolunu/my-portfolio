@@ -92,6 +92,7 @@ $clr-border: shade(10, 10, 20, -12);
 
 html {
     scroll-behavior: smooth;
+    background-color: $text-color;
 
 }
 
@@ -100,7 +101,7 @@ body {
     font-family: 'Raleway', sans-serif;
     background-color: $clr-original;
     color: $text-color;
-    max-width: 1400px;
+    margin: auto;
     overflow-x: hidden;
 }
 
@@ -111,6 +112,8 @@ body.loading {
 .container {
     padding-left: 1rem;
     padding-right: 1rem;
+    max-width: 1440px;
+    margin: auto;
 }
 
 
@@ -125,6 +128,7 @@ header {
 
     nav {
         height: 100%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -161,16 +165,18 @@ header {
 
         @media (max-width: 450px) {
             ul.nav-list {
-                z-index: 2;
+                z-index: 4;
                 padding: 0;
                 padding-top: 70px;
                 position: fixed;
-                width: 50vw;
+                width: 90vw;
                 top: 0;
+                left: 0;
                 right: 0;
                 bottom: 0;
                 background-color: $clr-original;
-                transform: translateX(100%);
+                transform: translateX(120%);
+                box-shadow: 0px 0px 5px #fff;
                 transition: transform 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
                 &.open {
@@ -181,9 +187,18 @@ header {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    height: 45px;
+                    height: 15%;
                     width: 100%;
                     margin: 0;
+
+                    a {
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                    }
 
                     &:hover {
                         background-color: $text-color;
@@ -384,8 +399,6 @@ section.about-me {
 section.projects {
     padding-top: 10vw;
 
-
-
     h3.title {
         text-align: center;
         font-size: 20px;
@@ -425,6 +438,7 @@ section.projects {
         border-radius: 5px;
         overflow: hidden;
         min-height: 520px;
+        min-width: 340px;
         display: flex;
         flex-direction: column;
 
