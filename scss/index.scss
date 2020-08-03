@@ -169,18 +169,18 @@ header {
                 padding: 0;
                 padding-top: 70px;
                 position: fixed;
-                width: 90vw;
+                width: 250px;
                 top: 0;
                 left: 0;
                 right: 0;
                 bottom: 0;
                 background-color: $clr-original;
-                transform: translateY(120%);
+                transform: scale(0);
                 box-shadow: 0px 0px 5px #fff;
                 transition: transform 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
                 &.open {
-                    transform: translateY(0);
+                    transform: scale(1);
                 }
 
                 li {

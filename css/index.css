@@ -157,14 +157,14 @@ header nav li a:hover {
     padding: 0;
     padding-top: 70px;
     position: fixed;
-    width: 90vw;
+    width: 250px;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: #00000a;
-    -webkit-transform: translateY(120%);
-            transform: translateY(120%);
+    -webkit-transform: scale(0);
+            transform: scale(0);
     -webkit-box-shadow: 0px 0px 5px #fff;
             box-shadow: 0px 0px 5px #fff;
     -webkit-transition: -webkit-transform 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -173,8 +173,8 @@ header nav li a:hover {
     transition: transform 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   header nav ul.nav-list.open {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   header nav ul.nav-list li {
     display: -webkit-box;
