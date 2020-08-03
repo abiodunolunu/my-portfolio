@@ -11,7 +11,6 @@ navBtns.forEach(btn => {
     })
 })
 
-console.log(navBtns)
 
 function toggle() {
     const menu = document.querySelector('.menu-icon')
