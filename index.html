@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+
+<body class="">
+    <div id="app">
+        <header>
+            <nav>
+                <a href="#" class="brand">Abeydev</a>
+
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#contact-me" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="menu-icon" onclick="toggle()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+        <section class="hero">
+            <div class="container">
+                <div class="content">
+                    <h1>Hello, I'm <span>Abiodun Emmanuel</span>, Nice to meet you! 😁</h1>
+                    <div class="hero__text">
+                        <p> I'm a Web (mainly M-E-V-N stack) developer based in Lagos, Nigeria.</p>
+                        <p>I'm quietly confident that I can deliver clean and efficient code while following best practices.</p>
+                        <p>Innovation is my passion.</p>
+                    </div>
+                    <a href="#projects"><span>View my projects</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-me">
+            <div class="container">
+                <div class="image">
+                    <img src="./assets/me1.png" alt="my-picture">
+                </div>
+                <div class="text">
+
+                    <div class="skills">
+                        <h3>My Skills</h3>
+                        <ul>
+                            <li><span> HTML 5 <img src="./assets/html5.svg" alt=""> </span></li>
+                            <li><span>CSS 3 <img src="./assets/css-3.svg" alt=""> </span></li>
+                            <li><span>SCSS <img src="./assets/sass-1.svg" alt=""></span></li>
+                            <li><span>JS <img src="./assets/logo-javascript.svg" alt=""></span></li>
+                            <li><span>Vue.JS <img src="./assets/vue-js-1.svg" alt=""></span></li>
+                            <li><span>NodeJs (Express) <img src="./assets/nodejs-1.svg" alt=""></span></li>
+                            <li><span>GraphQL <img src="./assets/graphql.svg" alt=""></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h3 class="title">My Projects (Personal)</h3>
+            <div class="container">
+                <div class="project__item">
+                    <div class="project__image">
+                        <img src="./assets/office-workin.jpg" alt="">
+                    </div>
+                    <div class="project__content">
+                        <p class="title">Soccer / Football Live Chat</p>
+                        <p>An App where Football / Soccer fans can connect and live chat.</p>
+                        <div class="technology">
+                            <h3> Technologies used: </h3>
+                            <ul>
+                                <li><span>HTML</span></li>
+                                <li><span>CSS</span></li>
+                                <li><span>JS</span></li>
+                                <li><span>Express</span></li>
+                                <li><span>MongoDB</span></li>
+                                <li><span>WebSockets</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project__links">
+                        <a href="https://football-live-chat.herokuapp.com/" target="_blank"><span>Visit Site<i
+                                    class="fas fa-globe"></i></span> </a>
+                        <a href="https://github.com/abiodunolunu/football-soccer-chat-LIVE-chat-app-with-rooms"
+                            target="_blank"><span> View Code<i class="fab fa-github"></i> </span></a>
+                    </div>
+                </div>
+                <div class="project__item">
+                    <div class="project__image">
+                        <img src="./assets/office-working.jpg" alt="">
+                    </div>
+                    <div class="project__content">
+                        <p class="title">MY PICTURE APP</p>
+                        <p>My Picture App is a website where users can share and interact with pictures, basically a
+                            MINI Instagram
+                        </p>
+                        <div class="technology">
+                            <h3> Technologies used: </h3>
+                            <ul>
+                                <li><span>HTML</span></li>
+                                <li><span>CSS</span></li>
+                                <li><span>Vue.JS</span></li>
+                                <li><span>Express</span></li>
+                                <li><span>GraphQL</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project__links">
+                        <a href="https://my-picture-app.herokuapp.com/" target="_blank"><span>Visit Site<i
+                                    class="fas fa-globe"></i></span> </a>
+                        <a href="https://github.com/abiodunolunu/my-picture-app---server" target="_blank"><span> View
+                                Code<i class="fab fa-github"></i> </span></a>
+                    </div>
+                </div>
+                <div class="project__item">
+                    <div class="project__image">
+                        <img src="./assets/office-workin.jpg" alt="">
+                    </div>
+                    <div class="project__content">
+                        <p class="title">Asknonymous</p>
+                        <p> Asknonymous is a website where users can send and receive anonymous messages </p>
+                        <div class="technology">
+                            <h3> Technologies used: </h3>
+                            <ul>
+                                <li><span>HTML</span></li>
+                                <li><span>CSS</span></li>
+                                <li><span>JS</span></li>
+                                <li><span>Express</span></li>
+                                <li><span>MongoDB</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project__links">
+                        <a href="https://asknonymos.herokuapp.com/" target="_blank"><span>Visit Site<i
+                                    class="fas fa-globe"></i></span> </a>
+                        <a href="https://github.com/abiodunolunu/Asknonymous" target="_blank"><span> View Code<i
+                                    class="fab fa-github"></i> </span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="contact-me" class="contact-me">
+            <div class="container">
+                <div class="per">
+                    <a href="mailto:abiodunolunu@gmail.com">
+                        <span>
+                            <i class="fas fa-envelope"></i> Hire me
+                        </span>
+                    </a>
+                    <a href="tel:+2349032025737"><span> <i class="fas fa-phone-alt"></i> +2349032025737 </span></a>
+                </div>
+
+                <div class="socials">
+                    <a href="https://www.twitter.com/findByUsername">
+                        <span>
+                            <i class="fab fa-twitter"></i>
+                        </span>
+                    </a>
+                    <a href="https://github.com/abiodunolunu/">
+                        <span>
+                            <i class="fab fa-github"> </i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <p class="copyr">2020® Abeydev.</p>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
